@@ -7,9 +7,19 @@ nav {
   margin-left: 60px;
 }
 
-.tableWrapper {
-  max-height: 500px;
-  overflow: auto;
+.nav>li>a:hover,.nav>li>a:focus {
+  color: rgb(255, 166, 77);
+  border: 1px solid rgb(255, 166, 77);
+  background: rgb(77, 148, 255);
+  background: rgba(77, 148, 255, 0.9);
+  font-weight: bold; 
+}
+
+.nav-pills a {
+    color: #00051a;
+    border: 1px solid #002b80;
+    background: rgb(255, 166, 77);
+    background: rgba(255, 166, 77, 0.9);
 }
 
 #loader {
@@ -18,13 +28,139 @@ nav {
   margin-right: auto;
 }
 
-.formWrapper {
-  border-radius: 5px;
-  background-color: #e5f2ff;
-  padding-left: 60px;
-  padding-right: 60px;
-}
-
 .angular-google-map-container {
   height: 500px;
+}
+
+#searchBar {
+  margin: 15px 10px;
+}
+
+.tableWrapper {
+  max-height: 500px;
+  overflow: auto;
+}
+
+.table-header {
+  margin: 0px;
+  font-family: "Palatino";
+}
+
+.listing td {
+  cursor:pointer;
+}
+
+.ng-invalid.ng-dirty {
+  border-color: RED;
+}
+
+.ng-valid.ng-dirty {
+  border-color: GREEN;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  color: #00051a;
+  background: #000f4d;
+  background-image: url("/../../img/cent-tower2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-attachment: fixed;
+}
+
+h1 {
+  color: #e67200;
+  font-family: "Palatino";
+}
+
+h2, h5 {
+  /*text-align: center;*/
+  font-family: "Palatino";
+}
+
+h3 {
+  color: #e67200;
+  font-family: "Palatino";
+  font-weight: bold;
+}
+
+table {
+  background: none;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td {
+  background: rgb(255, 166, 77);
+  background: rgba(255, 166, 77, 0.7);
+}
+.table-striped>tbody>tr:nth-child(even)>td {
+  background: rgb(77, 148, 255);
+  background: rgba(77, 148, 255, 0.7);
+}
+
+th {
+  background: rgb(242, 242, 242);
+  background: rgba(242, 242, 242, 0.7);
+}
+
+.table-hover tbody tr:hover td {
+  background: rgb(255, 242, 229);
+  background: rgba(255, 242, 229, 0.7);
+}
+
+input, 
+button {
+  background: rgb(255, 166, 77);
+  background: rgba(255, 166, 77, 0.9);
+}
+
+.form-group {
+  color: #ffb266;
+}
+
+.btn {
+  color: #00051a;
+  border: 1px solid #002b80;
+  background: rgb(255, 166, 77);
+  background: rgba(255, 166, 77, 0.9);
+}
+
+.btn:hover {
+  color: rgb(255, 166, 77);
+  border: 1px solid rgb(255, 166, 77);
+  background: rgb(77, 148, 255);
+  background: rgba(77, 148, 255, 0.9);
+  font-weight: bold;
+}
+
+.jumbotron {
+  background-image: url("/../../img/tower.png");
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  opacity: 0.92;
+}
+
+.btn-xs {
+  visibility: hidden;
+}
+
+.remove {
+  border: none;
+  background: none;
+  float: right;
+}
+
+.remove:hover {
+  border: none;
+  background: none;
+  color: RED;
+}
+
+tr:hover td button {
+  visibility: visible;
 }

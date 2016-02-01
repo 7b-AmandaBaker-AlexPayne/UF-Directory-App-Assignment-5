@@ -4,20 +4,21 @@
     <base href="/">
     <link rel="stylesheet" href="/public/lib/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <title>UF Directory App</title>
   </head>
   <body ng-app="directoryApp">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <h1>UF Directory App</h1>
+          <h1><b>UF Directory App</b> <img src="/../../img/gator.png" alt="gator logo" width="140px" height="85px" /></h1>
         </div>
         <div class="col-md-6">
           <!-- Add a ui-sref property to the anchor tags to allow navigation between different states -->
           <nav>
             <ul class="nav nav-pills">
               <li><a ui-sref="listings.list">List View</a></li>
-              <li><a ui-sref="listings.map">Map View</a></li>
               <li><a ui-sref="listings.create">Create New Listing</a></li>
+              <li><a ui-sref="listings.map">Map View</a></li>
             </ul>
           </nav>
         </div>

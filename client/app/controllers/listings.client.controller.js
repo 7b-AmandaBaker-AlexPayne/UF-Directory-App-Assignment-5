@@ -98,6 +98,14 @@ angular.module('listings').controller('ListingsController', ['$scope', '$locatio
                });
     };
 
+    $scope.cancel = function() {
+      $state.go('listings.list', { successMessage: 'Cancelled editing' });
+    };
+
+     $scope.cancelcreate = function() {
+      $state.go('listings.list', { successMessage: 'Cancelled submission' });
+    };
+
     $scope.remove = function(listing) {
       /*
         Implement the remove function. If the removal is successful, navigate back to 'listing.list'. Otherwise,
