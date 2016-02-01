@@ -91,10 +91,10 @@ angular.module('listings').controller('ListingsController', ['$scope', '$locatio
        Listings.update(listing)
                .then(function(response) {
                  //if the object is successfully saved redirect back to the list page
-                 $state.go('listings.list', { successMessage: 'Listing succesfully created!' });
+                 $state.go('listings.list', { successMessage: 'Listing succesfully updated!' });
                }, function(error) {
                  //otherwise display the error
-                 $scope.error = 'Unable to save listing!\n' + error;
+                 $scope.error = 'Unable to update listing!\n' + error;
                });
     };
 
